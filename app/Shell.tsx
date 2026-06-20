@@ -82,7 +82,7 @@ export function FooterShell() {
           />
         </div>
         <div className="flex gap-6 px-9 mb-6">
-          <a href="#" className="text-gray-500 cursor-pointer">
+          <a href="/book-a-consult" className="text-gray-500 cursor-pointer">
             Book a consultation
           </a>
           <a href="#" className="text-gray-500 cursor-pointer">

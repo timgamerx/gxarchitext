@@ -6,6 +6,9 @@ import { HeaderShell, FooterShell } from "./Shell";
 export const metadata: Metadata = {
   title: "Growth Architect",
   description: "Data-driven strategies and innovative marketing solutions.",
+  icons: {
+    icon: "/gx-favicon.png",
+  },
 };
 
 export default function RootLayout({

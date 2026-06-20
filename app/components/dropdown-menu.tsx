@@ -38,7 +38,7 @@ export default function DropdownMenu() {
             className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg ring-1 ring-black/5 z-50 overflow-hidden"
           >
             <div className="py-2">
-              <Link href="/consultation" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50">
+              <Link href="/book-a-consult" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50">
                 <Calendar className="w-4 h-4 text-gray-400" /> Book a consultation
               </Link>
               <Link href="/terms-and-privacy" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50">
