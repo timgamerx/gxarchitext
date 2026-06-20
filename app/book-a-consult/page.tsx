@@ -129,6 +129,7 @@ export default function Home() {
       <section
         id="about"
         className="mx-auto max-w-6xl px-6 py-32"
+        style={{marginBottom: -80, marginTop: -80 }}
       >
         <div className="grid gap-12 md:grid-cols-2">
 
@@ -147,7 +148,7 @@ export default function Home() {
       <section
         id="services"
         className="mx-auto max-w-6xl px-6 py-32"
-      >
+       style={{marginBottom: -80 }}>
         <h2 className="mb-12 text-5xl font-bold">
           Services
         </h2>
@@ -198,6 +199,337 @@ export default function Home() {
               communities in one ecosystem.
             </p>
           </div>
+
+{/* Hero */}
+      <section className="mx-auto max-w-5xl py-25">
+
+        {/* <span className="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-400">
+          Product Strategy Case Study
+        </span>   */}
+
+       <h1 className="text-6xl font-bold"
+       style={{ marginTop: -45 }}>
+          Verrsa
+        </h1> 
+
+        <p className="mt-6 max-w-3xl text-xl text-slate-400"
+        style={{ marginBottom: -75 }}>
+          Designing a creator-focused platform that
+          combines articles, podcasts, videos,
+          and communities into one digital ecosystem.
+        </p>
+
+      </section>
+
+  {/* Overview */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10">
+
+
+        <h2 className="text-4xl font-bold mb-8"
+        style={{ marginTop: -10 }}>
+          Project Overview
+        </h2>
+
+        <p className="text-lg leading-relaxed text-slate-400"
+        style={{ marginBottom: -45 }}>
+          Verrsa was created to solve content fragmentation.
+          Today, creators often rely on multiple platforms
+          for writing, podcasting, video publishing and
+          community building.
+
+          The vision behind Verrsa is to provide a single
+          platform where creators can create, publish,
+          engage and monetize content without switching
+          between multiple applications.
+        </p>
+
+      </section>
+
+<div className="flex flex-row p-2 "
+>
+      {/* Problem */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10"
+        style={{ width: "2000px"}}>
+
+        <h2 className="text-4xl font-bold mb-8"
+      >
+          The Problem
+        </h2>
+
+        <p className="text-lg leading-relaxed text-slate-400"
+        style={{ marginBottom: -45 }}>
+          Content creators currently use different platforms
+          for different activities:
+ <br />
+          • Medium for articles
+ <br />
+          • YouTube for videos     
+ <br />
+ • Spotify for podcasts
+ <br />
+          • Discord for communities
+ <br />
+          • Patreon for monetization
+ <br />
+          This creates fragmented experiences for both
+          creators and audiences.
+        </p>
+
+      </section>
+
+      <div className="h-80 w-px bg-slate-600" 
+      style={{ marginTop: 75, marginRight: 25, marginLeft: 15 }}/>
+
+        {/* Solution */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10"
+      style={{ width: "2000px"}}>
+
+        <h2 className="text-4xl font-bold mb-8"
+        style={{ marginTop: -10 }}>
+          Proposed Solution
+        </h2>
+
+        <p className="text-lg leading-relaxed text-slate-400"
+        style={{ marginBottom: -40 }}>
+          Verrsa combines multiple content formats into
+          one ecosystem.
+
+          Users can:
+ <br />
+          • Write articles
+ <br />
+          • Upload podcasts
+ <br />
+          • Publish short-form videos
+ <br />
+          • Join communities
+ <br />
+          • Build audiences
+ <br />
+          • Monetize content
+ <br />
+          from a single account and platform.
+        </p>
+
+      </section>
+</div>
+      
+
+      {/* Target Audience */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10">
+
+        <h2 className="text-4xl font-bold mb-8">
+          Target Audience
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6"
+        style={{ marginBottom: -25 }}>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="font-semibold text-xl mb-4">
+              Creators
+            </h3>
+
+            <p className="text-slate-400">
+              Writers, podcasters, educators,
+              influencers and storytellers.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="font-semibold text-xl mb-4">
+              Professionals
+            </h3>
+
+            <p className="text-slate-400">
+              Entrepreneurs, researchers,
+              business owners and thought leaders.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Product Features */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10">
+
+        <h2 className="text-4xl font-bold mb-8"
+        style={{ marginTop: -10 }}>
+          Core Features
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6"
+        style={{ marginBottom: -25 }}>
+
+          {[
+            "Article Publishing",
+            "Podcast Hosting",
+            "Short-Form Video",
+            "Community Groups",
+            "Creator Profiles",
+            "Content Discovery",
+            "Bookmarks",
+            "Monetization Tools",
+          ].map((feature) => (
+            <div
+              key={feature}
+              className="rounded-2xl border border-white/10 bg-white/5 p-6"
+            >
+              {feature}
+            </div>
+          ))}
+
+        </div>
+
+      </section>
+
+      {/* Research */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10">
+
+        <h2 className="text-4xl font-bold mb-8"
+        style={{ marginTop: -10 }}>
+          Research & Validation
+        </h2>
+
+        <p className="text-lg leading-relaxed text-slate-400"
+        style={{ marginBottom: -35 }}>
+          Market analysis revealed increasing demand
+          for creator economy tools and community-driven
+          platforms.
+
+          Existing platforms solve individual problems
+          but rarely provide a unified experience for
+          content creation, distribution and monetization.
+
+          This insight became the foundation of Verrsa's
+          product strategy.
+        </p>
+
+      </section>
+
+      {/* Business Model */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10">
+
+        <h2 className="text-4xl font-bold mb-8"
+        style={{ marginTop: -10 }}>
+          Monetization Strategy
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6"
+        style={{ marginBottom: -30 }}>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="font-semibold">
+              Premium Subscription
+            </h3>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="font-semibold">
+              Creator Monetization Fees
+            </h3>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="font-semibold">
+              Sponsored Content & Ads
+            </h3>
+          </div>
+
+        </div>
+
+      </section>
+
+<div className="flex flex-row">
+      {/* My Role */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10"
+       style={{ width: "2000px"}}>
+
+        <h2 className="text-4xl font-bold mb-8"
+        style={{ marginTop: -10 }}>
+          My Role
+        </h2>
+
+        <p className="text-lg leading-relaxed text-slate-400"
+        style={{ marginBottom: -40 }}>
+          Founder, Product Strategist, Researcher,
+          Brand Designer and Growth Planner.
+<br />
+          Responsibilities included:
+<br />
+          • Product ideation
+<br />
+          • Market research
+<br />
+          • User flow planning
+<br />
+          • Feature prioritization
+<br />
+          • Branding
+<br />
+          • Growth strategy
+<br />
+          • Monetization planning
+        </p>
+      </section>
+
+      <div className="h-120 w-px bg-slate-600" 
+      style={{ marginTop: 75, marginRight: 40, marginLeft: 25 }}/>
+
+      {/* Roadmap */}
+      <section className="mx-auto max-w-5xl py-16 border-t border-white/10"
+      style={{ width: "2000px"}}>
+
+        <h2 className="text-4xl font-bold mb-8"
+        style={{ marginTop: -10 }}>
+          Product Roadmap
+        </h2>
+
+        <div className="space-y-6"
+        style={{ marginBottom: -25 }}>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            Phase 1 — MVP Development
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            Phase 2 — Creator Onboarding
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            Phase 3 — Monetization Features
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            Phase 4 — Global Expansion
+          </div>
+
+        </div>
+
+      </section>
+</div>
+
+
+      {/* Conclusion */}
+      <section className="mx-auto max-w-5xl py-24 border-t border-white/10">
+
+        <h2 className="text-4xl font-bold mb-8"
+        style={{ marginTop: -40 }}>
+          Conclusion
+        </h2>
+
+        <p className="text-lg leading-relaxed text-slate-400">
+          Verrsa represents my vision for a creator-first
+          platform that unifies content creation,
+          community engagement and monetization.
+
+          The project demonstrates my abilities in
+          product strategy, market research,
+          branding, growth planning and startup execution.
+        </p>
+
+      </section>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-10">
             <h3 className="text-3xl font-semibold">
@@ -418,8 +750,6 @@ export default function Home() {
           Open to marketing, growth, startup and
           software opportunities.
         </p>
-
-       
 
          <a
             href={
