@@ -207,7 +207,7 @@ export default function Home() {
           Product Strategy Case Study
         </span>   */}
 
-       <h1 className="text-6xl font-bold"
+       <h1 className="text-6xl font-bold underline decoration-sky-500 decoration-4 underline-offset-4"
        style={{ marginTop: -45 }}>
           Verrsa
         </h1> 
