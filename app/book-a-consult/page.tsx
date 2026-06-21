@@ -88,13 +88,13 @@ export default function Home() {
           </motion.p>
 
           <div className="mt-10 flex gap-4">
-            <button className="rounded-full bg-cyan-500 px-7 py-4 font-medium text-slate-950">
+            <a href="https://linktr.ee/Iyanu_Gfx" target="_blank" className="rounded-full bg-cyan-500 px-7 py-4 font-medium text-slate-950">
               View Portfolio
-            </button>
+            </a>
 
-            <button className="rounded-full border border-white/10 bg-white/5 px-7 py-4 backdrop-blur">
+            <a href="https://profile.indeed.com/p/ogundarei-jnwh6qr" target="_blank" className="rounded-full border border-white/10 bg-white/5 px-7 py-4 backdrop-blur">
               Download CV
-            </button>
+            </a>
           </div>
         </div>
       </section>
