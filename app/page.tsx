@@ -1,18 +1,17 @@
-'use client';
-import { useState } from 'react';
+"use client";
+import React, { useState } from 'react';
 import Image from "next/image";
-import { useRouter } from 'next/navigation'; // Use 'next/router' for Pages Router
 import { Send } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Home() {
   const [typedcomment, setTypedComment] = useState("");
   const [submittedComment, setSubmittedComment] = useState("");
-  const router = useRouter();
+  // removed unused router to satisfy TypeScript
   const textWithNewLines = "\n";
 
 
-  const SaveComment = (event) => {
+  const SaveComment = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTypedComment(event.target.value);
   };
   
@@ -22,7 +21,7 @@ export default function Home() {
     setTypedComment('');
   };
 
-  const onKeyDown = (event) => {
+  const onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       SubmitMessage();
     }
