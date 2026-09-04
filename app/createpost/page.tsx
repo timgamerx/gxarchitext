@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import { Check, ArrowUpRight, CloudUpload } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import PhotoPicker from "../components/PhotoPicker";
 
 export default function CreatePost() {
