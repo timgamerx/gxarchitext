@@ -1,16 +1,36 @@
 'use client';
+import { useState } from 'react';
 import Image from "next/image";
 import { useRouter } from 'next/navigation'; // Use 'next/router' for Pages Router
 import { Send } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Home() {
+  const [typedcomment, setTypedComment] = useState("");
+  const [submittedComment, setSubmittedComment] = useState("");
   const router = useRouter();
-
   const textWithNewLines = "\n";
+
+
+  const SaveComment = (event) => {
+    setTypedComment(event.target.value);
+  };
+  
+  const SubmitMessage = () => {
+    setSubmittedComment(typedcomment)
+    console.log(typedcomment)
+    setTypedComment('');
+  };
+
+  const onKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      SubmitMessage();
+    }
+  };
+   
+
   
   return (
-    
     <div className="container ml-0 mt-32 align-left"
     >
       <h1 className="text-5xl ml-5 font-bold mt-0 px-4 py-2 text-black"
@@ -18,7 +38,7 @@ export default function Home() {
        Most People Never Start
       </h1>
       <p className="text-lg ml-5 mt-0 px-4 py-2 text-black">
-        They don't fail because they're incapable. They fail because they keep waiting.
+        They don&#39;t fail because they&#39;re incapable. They fail because they keep waiting.
       </p>
       <Image 
         src="/growth-architect-person.png"
@@ -29,7 +49,7 @@ export default function Home() {
       />
       <p className="justify-start text-left text-lg ml-5 mt-10 mb-10 px-4 py-2 text-black whitespace-pre-line"
      >
-      Most people don't fail because they're not talented.
+      Most people don&#39;t fail because they&#39;re not talented.
       {textWithNewLines}
       {textWithNewLines}
       Most people fail because they never start.
@@ -39,7 +59,7 @@ export default function Home() {
       {textWithNewLines}
       Weeks researching. 
       {textWithNewLines}
-      Days waiting for the "perfect moment."
+      Days waiting for the &quot;perfect moment.&quot;
       {textWithNewLines}
       But the perfect moment never comes.
       {textWithNewLines}
@@ -47,9 +67,9 @@ export default function Home() {
       The truth is that every successful person once started without having everything figured out. They started with limited knowledge, limited resources, and plenty of uncertainty.
       {textWithNewLines}
       {textWithNewLines}
-      The difference isn't intelligence. 
+      The difference isn&#39;t intelligence. 
       {textWithNewLines}
-      The difference isn't luck.
+      The difference isn&#39;t luck.
       {textWithNewLines}
       {textWithNewLines}
       The difference is action.
@@ -58,11 +78,11 @@ export default function Home() {
       While others are waiting for guarantees, builders are learning by doing.
       {textWithNewLines}
       {textWithNewLines}
-      Your first attempt won't be perfect. 
+      Your first attempt won&#39;t be perfect. 
       {textWithNewLines}
-      Your first design won't be perfect. 
+      Your first design won&#39;t be perfect. 
       {textWithNewLines}
-      Your first business won't be perfect.
+      Your first business won&#39;t be perfect.
       {textWithNewLines}
       {textWithNewLines}
       But every expert was once a beginner who decided to start.
@@ -71,17 +91,17 @@ export default function Home() {
       Progress comes from movement, not preparation alone.
       {textWithNewLines}
       {textWithNewLines}
-      Start before you're ready. 
+      Start before you&#39;re ready. 
       {textWithNewLines}
       Learn as you go. 
       {textWithNewLines}
       Improve along the way.
       {textWithNewLines}
       {textWithNewLines}
-      A year from now, you'll either be glad you started today or wishing you had.
+      A year from now, you&#39;ll either be glad you started today or wishing you had.
       {textWithNewLines}
       {textWithNewLines}
-      What's one thing you've been putting off that you need to start?
+      What&#39;s one thing you&#39;ve been putting off that you need to start?
       {textWithNewLines}
       {textWithNewLines}
       <span className="font-semibold">
@@ -94,12 +114,16 @@ export default function Home() {
           <input
             type="text"
             placeholder="Type something..."
+            onChange={SaveComment}
+            value={typedcomment}
+            onKeyDown={onKeyDown}
             className="border border-gray-200 — 1px flex justify-start w-70 h-12 px-4 py-2 rounded-full placeholder:italic"
           />
 
           <button className="flex items-center gap-2 bg-gray-200 text-white px-4 py-4 rounded-full ml-2 cursor-pointer hover:bg-gray-300 transition-colors">
             <Send size={18}
-            className="text-gray-600" />
+            className="text-gray-600" 
+            onClick={SubmitMessage} />
           </button>
       </div>
 
@@ -114,7 +138,7 @@ export default function Home() {
       <div className="w-70 h-25 bg-gray-200 rounded-bl-2xl rounded-br-2xl rounded-tr-2xl p-4">
         <p className="text-sm text-gray-700"
         style={{ marginTop: -7 }}>
-          This is so insightful! I’m glad i could learn from this. I promise i will take action and i believe by next year, i will be here to share my testimony.
+          {submittedComment}
         </p>
       </div>
     </div>
