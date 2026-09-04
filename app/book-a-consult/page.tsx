@@ -84,7 +84,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             className="mt-8 max-w-2xl text-xl text-slate-400"
           >
-            A creative marketer combining strategy, design thinking, and performance advertising to build growth systems for modern brands.
+            A product-focused growth professional who combines business strategy, design, and software development to build and scale technology products.
           </motion.p>
 
           <div className="mt-10 flex gap-4">
@@ -100,12 +100,12 @@ export default function Home() {
       </section>
 
       {/* Metrics */}
-      <section className="mx-auto max-w-6xl px-6 pb-32">
+      <section className="mx-auto max-w-6xl px-6 pb-32 mt-8">
         <div className="grid gap-6 md:grid-cols-4">
 
           {[
             ["50+", "Design Projects"],
-            ["3", "Startup Projects"],
+            ["1", "Startup Projects"],
             ["4+", "Years Experience"],
             ["100%", "Growth Mindset"],
           ].map(([number, label]) => (
@@ -402,7 +402,7 @@ export default function Home() {
           but rarely provide a unified experience for
           content creation, distribution and monetization.
 
-          This insight became the foundation of Verrsa's
+          This insight became the foundation of Verrsa&#39;s
           product strategy.
         </p>
 
@@ -531,6 +531,7 @@ export default function Home() {
 
       </section>
 
+        {/*
           <div className="rounded-3xl border border-white/10 bg-white/5 p-10">
             <h3 className="text-3xl font-semibold">
               TikTok Ads Growth Campaign
@@ -550,16 +551,16 @@ export default function Home() {
           Case Studies
         </h2> */}
 
-        {/* Title */}
+        {/* Title 
         <h1 className="text-4xl md:text-6xl font-bold leading-tight underline decoration-sky-500 decoration-4 underline-offset-4 mb-16">
           TikTok Ads Growth Case Study — First Client Campaign
         </h1>
 
-        {/* Two Column Layout */}
+        {/* Two Column Layout 
         <div className="grid md:grid-cols-2 gap-16 border-b border-white/20 pb-16">
-          {/* Left Column */}
+          {/* Left Column 
           <div>
-            {/* Project Overview */}
+            {/* Project Overview 
             <div className="mb-12">
               <h3 className="text-3xl font-semibold mb-6">
                 Project Overview
@@ -574,7 +575,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Objective */}
+            {/* Objective 
             <div className="mb-12">
               <h3 className="text-3xl font-semibold mb-6">
                 Objective
@@ -588,7 +589,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Results */}
+            {/* Results 
             <div>
               <h3 className="text-3xl font-semibold mb-6">
                 Results
@@ -616,9 +617,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Column */}
+          {/* Right Column 
           <div className="md:border-l border-white/20 md:pl-16">
-            {/* Role */}
+            {/* Role 
             <div className="mb-12">
               <h3 className="text-3xl font-semibold mb-6">
                 My Role
@@ -633,7 +634,7 @@ export default function Home() {
               </ul>
             </div>
 
-            {/* Strategy */}
+            {/* Strategy 
             <div>
               <h3 className="text-3xl font-semibold mb-8">
                 Strategy Execution
@@ -692,7 +693,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Key Learnings */}
+        {/* Key Learnings 
         <div className="py-16 border-b border-white/20">
           <h3 className="text-3xl font-semibold mb-8">
             Key Learnings
@@ -711,7 +712,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Conclusion */}
+        {/* Conclusion 
         <div className="pt-16"
          style={{ marginBottom: -115 }}>
           <h3 className="text-3xl font-semibold mb-6">
@@ -726,11 +727,11 @@ export default function Home() {
             outcomes.
           </p>
         </div>
-      </div>
-    </section>
+      </div> 
+    </section> */}
 
         </div>
-      </section>
+      </section> 
 
       {/* Contact */}
       <section
@@ -743,7 +744,7 @@ export default function Home() {
         />
 
         <h2 className="text-6xl font-bold">
-          Let's Build Something Great
+          Let&#39;s Build Something Great
         </h2>
 
         <p className="mt-6 text-xl text-slate-400">
@@ -752,14 +753,14 @@ export default function Home() {
         </p>
 
          <a
-            href={
+           href={
               "mailto:growthxarchitect@gmail.com?subject=" +
-              encodeURIComponent("Brand growth and marketing inquiry") +
+              encodeURIComponent("Brand growth inquiry") +
               "&body=" +
               encodeURIComponent(
-                "Hi, I love your work building brands, growth marketing, and product experiences. I'm looking for help with brand strategy, audience growth, and digital marketing campaigns."
+                "Hi, I love your work building brands, and product experiences. I'm looking for help with brand strategy and audience growth."
               )
-            }
+           }
             className="mt-10 inline-block rounded-full bg-cyan-500 px-8 py-4 text-white cursor-pointer"
           >
             Get In Touch

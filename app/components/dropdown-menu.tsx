@@ -41,12 +41,20 @@ export default function DropdownMenu() {
               <Link href="/book-a-consult" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50">
                 <Calendar className="w-4 h-4 text-gray-400" /> Book a consultation
               </Link>
-              <Link href="/terms-and-privacy" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50">
+              <Link href="#" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50">
                 <FileText className="w-4 h-4 text-gray-400" /> Terms & Privacy
               </Link>
-              <Link href="/contact" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50">
+              <a
+                href={
+                  "mailto:growthxarchitect@gmail.com?subject=" +
+                  encodeURIComponent("Brand growth inquiry") +
+                  "&body=" +
+                  encodeURIComponent(
+                    "Hi, I love your work building brands, and product experiences. I'm looking for help with brand strategy and audience growth."
+                  )
+                } className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer">
                 <Mail className="w-4 h-4 text-gray-400" /> Contact Us
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}
