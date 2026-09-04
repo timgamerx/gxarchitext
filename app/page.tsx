@@ -27,8 +27,6 @@ export default function Home() {
       SubmitMessage();
     }
   };
-   
-
   
   return (
     <div className="container ml-0 mt-32 align-left"

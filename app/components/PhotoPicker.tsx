@@ -55,7 +55,7 @@ export default function PhotoPicker() {
       {/* Styled Container / Clickable Zone */}
       <div
         onClick={!previewUrl ? triggerPicker : undefined}
-        style={{ width: 600, height: 600 }}
+        style={{ width: 350, height: 600 }}
         className="mt-10 ml-5 px-4 py-2 bg-gray-100 rounded-xl items-center justify-center align-middle flex flex-col gap-2 cursor-pointer hover:bg-gray-200 transition-colors relative overflow-hidden group"
       >
         {!previewUrl ? (

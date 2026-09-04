@@ -16,7 +16,7 @@ export default function CreatePost() {
         </h1>
         <button
           className="flex items-center gap-2 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors ml-5 mt-4 bg-slate-900 hover:bg-cyan-700"
-          style={{ marginRight: 20 }}
+          style={{ marginRight: 60 }}
         >
           Post
           <ArrowUpRight size={22} />
@@ -38,7 +38,7 @@ export default function CreatePost() {
           placeholder="Post title..."
           className="text-xl text-gray-500  ml-5 mt-3 py-2 px-4 mt-2"
           style={{
-            width: 600,
+            width: 350,
             height: 150,
             borderWidth: 1,
             borderColor: "#ccc",
@@ -55,7 +55,7 @@ export default function CreatePost() {
           placeholder="Post excerpt..."
           className="text-xl text-gray-500  ml-5 mt-3 py-2 px-4 mt-2"
           style={{
-            width: 600,
+            width: 350,
             height: 150,
             borderWidth: 1,
             borderColor: "#ccc",
@@ -72,7 +72,7 @@ export default function CreatePost() {
           placeholder="Post content..."
           className="text-xl text-gray-500  ml-5 mt-3 py-2 px-4 mt-2"
           style={{
-            width: 600,
+            width: 350,
             height: 750,
             borderWidth: 1,
             borderColor: "#ccc",
@@ -87,7 +87,7 @@ export default function CreatePost() {
         </p>
         <select
           className="text-xl text-gray-500  ml-5 mt-3"
-          style={{ width: 600, height: 50 }}
+          style={{ width: 350, height: 50 }}
         >
           <option>General</option>
           <option>Tech</option>
@@ -101,7 +101,7 @@ export default function CreatePost() {
 
       <div
         className="flex flex-row items-center justify-between mt-0 mb-55 ml-5"
-        style={{ width: 600 }}
+        style={{ width: 350 }}
       >
         <p className="text-xl text-black font-semibold ml-5 mt-18">
           Allow Comments?
